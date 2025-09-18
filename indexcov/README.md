@@ -79,7 +79,7 @@ sent via `--fai` so that it knows the chromosome names around lengths.
 
 The sample names are inferred from the file names.
 
-Example usage with cram looks like:
+Example usage with BAI files looks like:
 
 ```
 goleft indexcov --extranormalize -d output/ --fai human_g1k_v37.fasta.fai /path/to/*.bai
