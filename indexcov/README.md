@@ -56,7 +56,7 @@ x-axis have many missing bins (likely truncated bam files).
 ========================
 
 CRAM indexes are supported. Since there is not a full CRAM parser available in go yet, `indexcov` uses only
-the .crai files and requires a `.fasta.fai` to be sent via `--fai` so that it knows the chromosome names around
+the .crai files and requires a `.fasta.fai` to be sent via `--fai` so that it knows the chromosome names and
 lengths. The sample names are inferred from the file names. crai resolution is often much less than 100KB (compared to)
 16KB for the bam index, but it is sufficient to find large-scale differences in coverage.
 
@@ -75,7 +75,7 @@ The `--extranormalize` flag greatly improves the results on CRAM (crai) files.
 If the BAM file itself is not available, you can pass the BAI only. 
 
 Similar to CRAI, the BAI only mode requires a `.fasta.fai` to be
-sent via `--fai` so that it knows the chromosome names around lengths. 
+sent via `--fai` so that it knows the chromosome names and lengths. 
 
 The sample names are inferred from the file names.
 
